@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projetos e trabalhos desenvolvidos por Erick Dahl." />
+  <meta name="author" content="Erick Dahl" />
+  <title>Erick Dahl | Portfólio</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>💻</text></svg>" />
+  <!-- Defines <site-header>/<site-footer> early so they render during parsing (no flash) -->
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+</head>
+<body>
+
+  <!-- Reusable header component, defined in js/header.js -->
+  <site-header></site-header>
+
+  <main>
+    <section class="section container">
+      <h1 class="page-title">Portfólio</h1>
+      <p class="intro">Alguns dos projetos que desenvolvi durante meus estudos.</p>
+    </section>
+
+    <section class="section container">
+      <div class="projects-grid">
+
+        <article class="card project-card">
+          <div class="project-cover cover-1" aria-hidden="true">🔐</div>
+          <div class="project-body">
+            <h3>Segura — Landing Page</h3>
+            <p>Landing page institucional de uma plataforma de Gestão de Acesso Privilegiado (PAM), com suporte completo a internacionalização (PT/EN).</p>
+            <ul class="tags">
+              <li>React</li><li>Vite</li><li>TypeScript</li><li>i18n</li>
+            </ul>
+            <a href="https://github.com/ErickDahl/segura" target="_blank" rel="noopener" class="project-link">Ver projeto →</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-cover cover-2" aria-hidden="true">🎮</div>
+          <div class="project-body">
+            <h3>Won Games</h3>
+            <p>E-commerce de jogos com catálogo, carrinho e navegação entre páginas, construído com Next.js.</p>
+            <ul class="tags">
+              <li>Next.js</li><li>React</li><li>TypeScript</li>
+            </ul>
+            <a href="https://github.com/ErickDahl/won-games" target="_blank" rel="noopener" class="project-link">Ver projeto →</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-cover cover-3" aria-hidden="true">⏱️</div>
+          <div class="project-body">
+            <h3>Chronos Pomodoro</h3>
+            <p>Aplicativo de produtividade baseado na técnica Pomodoro, com ciclos de foco e descanso e controle de tempo.</p>
+            <ul class="tags">
+              <li>React</li><li>TypeScript</li>
+            </ul>
+            <a href="https://github.com/ErickDahl/chronos-pomodoro" target="_blank" rel="noopener" class="project-link">Ver projeto →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Reusable footer component, defined in js/footer.js -->
+  <site-footer></site-footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

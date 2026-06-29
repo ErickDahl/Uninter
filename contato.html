@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Entre em contato com Erick Dahl pelo formulário ou redes sociais."
+    />
+    <meta name="author" content="Erick Dahl" />
+    <title>Erick Dahl | Contato</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>💻</text></svg>"
+    />
+    <!-- Defines <site-header>/<site-footer> early so they render during parsing (no flash) -->
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+  </head>
+  <body>
+    <!-- Reusable header component, defined in js/header.js -->
+    <site-header></site-header>
+
+    <main>
+      <section class="section container">
+        <h1 class="page-title">Contato</h1>
+        <p class="intro">
+          Quer trabalhar comigo ou trocar uma ideia? Envie uma mensagem!
+        </p>
+      </section>
+
+      <section class="section container contact-grid">
+        <!-- novalidate disables native validation so our JavaScript handles it -->
+        <form id="contactForm" class="card form" novalidate>
+          <div class="field">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Seu nome completo"
+            />
+            <small class="error" id="nameError"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="voce@exemplo.com"
+            />
+            <small class="error" id="emailError"></small>
+          </div>
+
+          <div class="field">
+            <label for="message">Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Escreva sua mensagem..."
+            ></textarea>
+            <small class="error" id="messageError"></small>
+          </div>
+
+          <button type="submit" class="button button-primary">
+            Enviar mensagem
+          </button>
+        </form>
+
+        <aside class="card contact-info">
+          <h2>Outras formas de contato</h2>
+          <ul class="contact-list">
+            <li>
+              <span class="icon">📧</span>
+              <a href="mailto:erick.dahl@exemplo.com">erickdahl1@gmail.com</a>
+            </li>
+            <li>
+              <span class="icon">💼</span>
+              <a
+                href="https://github.com/ErickDahl"
+                target="_blank"
+                rel="noopener"
+                >github.com/ErickDahl</a
+              >
+            </li>
+            <li>
+              <span class="icon">🔗</span>
+              <a
+                href="https://www.linkedin.com/in/erick-dahl/"
+                target="_blank"
+                rel="noopener"
+                >linkedin.com/in/erickdahl</a
+              >
+            </li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+
+    <!-- Confirmation modal: shown by JS after a valid submit -->
+    <dialog
+      id="modal"
+      class="modal"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal-content">
+        <span class="modal-icon">✅</span>
+        <h2 id="modalTitle">Mensagem enviada com sucesso!</h2>
+        <p>Obrigado pelo contato. Responderei em breve.</p>
+        <button id="closeModal" class="button button-primary">Fechar</button>
+      </div>
+    </dialog>
+
+    <!-- Reusable footer component, defined in js/footer.js -->
+    <site-footer></site-footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
